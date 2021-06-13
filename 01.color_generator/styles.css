@@ -1,0 +1,130 @@
+/* **Fonts** */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+/* **Variables** */
+:root {
+  --color-blue-dark: hsl(205, 77%, 27%);
+  --color-blue-light: hsl(205, 63%, 48%);
+  
+  --color-dark: #222;
+  --color-white: #fff;
+
+  --font-primary: "Roboto", sans-serif;
+  --font-secondary: "Open Sans", sans-serif;
+}
+
+/* End Variables */
+
+/* **Reset Styles** */
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* End Reset Styles */
+
+/* **Nav Section** */
+
+nav {
+  height: 3rem;
+  background-color: var(--color-white);
+
+  display: grid;
+  align-items: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.nav-container {
+  width: 90vw;
+  max-width: 690px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-container h4 {
+  text-transform: capitalize;
+  margin-bottom: 0;
+  color: var(--color-blue-dark);
+  font-size: 2.2vmax;
+}
+
+.nav-links {
+  display: flex;
+}
+
+.nav-links a {
+  text-transform: capitalize;
+  color: var(--color-dark);
+  margin-right: 1rem;
+  font-size: 1.5vmax;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  transition: all 0.3s linear;
+}
+
+nav a:hover {
+  color: var(--color-blue-light);
+}
+
+/* End Nav Section */ 
+
+/* **Main Section** */
+
+main {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  text-align: center;
+}
+
+.container h2 {
+  color: var(--color-white);
+  font-size: 3vmax;
+  text-transform: capitalize;
+  background-color: var(--color-dark);
+  padding: 1.5rem 2.5rem;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+.color {
+  color: var(--color-blue-light);
+}
+
+.btn-hero {
+  text-transform: uppercase;
+  background: transparent;
+  color: var(--color-dark);
+  letter-spacing: 0.1rem;
+  display: inline-block;
+  font-weight: bold;
+  transition: all 0.3s linear;
+  border: 2px solid var(--color-dark);
+  cursor: pointer;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 0.25rem;
+  font-size: 1.5vmax;
+  padding: 0.75rem 1.25rem;
+}
+.btn-hero:hover {
+  color: var(--clr-white);
+  background: var(--clr-black);
+}
+
+/* End Main Section */ 
+
